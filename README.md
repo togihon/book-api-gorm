@@ -1,6 +1,6 @@
 # book-api-gorm
 
-Repo ini adalah sebuah api serderhana menggunakan GO (gin web framework) dan PostgreSQL. Project ini mirip dengan <a href="https://github.com/togihon/book-api"> Project sebelumnya </a> tetapi
+Repo ini adalah sebuah api serderhana menggunakan GO (gin web framework) dan PostgreSQL. Project ini mirip dengan <a href="https://github.com/togihon/book-api"> Project sebelumnya</a> tetapi
 terdapat beberapa perbedaan, diantaranya:  
 1. Tidak membuat table di postgre secara manual, melainkan memanfaatkan migrasi menggunakan `gorm`
 2. terdapat perubahan pada struct book dimana `description` dihilangkan dan penambahan `createdAt` dan `updatedAt`  
@@ -14,13 +14,14 @@ pkg/database/database.go
 # body request postman untuk create dan update
 ```
  {  
-  title: "insert title"  
-  author: "insert author"   
+  "title": "insert title",  
+  "author": "insert author"   
  }  
 ``` 
 
  # test postman
 Berikut ini adalah HTTP method beserta route-nya  
+`localhost:8080/`  
   
 GET "/books/" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//get all books  
 GET "/books/:bookID" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  //get book by id  

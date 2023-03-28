@@ -5,6 +5,7 @@ terdapat beberapa perbedaan, diantaranya:
 1. Tidak membuat table di postgre secara manual, melainkan memanfaatkan migrasi menggunakan `gorm`
 2. terdapat perubahan pada struct book dimana `description` dihilangkan dan penambahan `createdAt` dan `updatedAt`  
   
+  Untuk menjalankan ketik `go run main.go` diterminal
 # ubah config database
 
 Jangan lupa untuk menyesuaikan config database dengan mengubah data di bagian  
